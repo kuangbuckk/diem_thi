@@ -1,0 +1,28 @@
+{
+  "name": "diem_thi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuangbuckk/diem_thi.git"
+  },
+  "keywords": [
+    "bach"
+  ],
+  "author": "bach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuangbuckk/diem_thi/issues"
+  },
+  "homepage": "https://github.com/kuangbuckk/diem_thi#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22"
+  }
+}
