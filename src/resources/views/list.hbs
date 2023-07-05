@@ -1,0 +1,24 @@
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Ho ten</th>
+      <th scope="col">Ban</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    {{#each khois}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.ho_ten}}</td>
+      <td>{{this.khoi_thi}}</td>
+    </tr>
+                {{else}}
+                <tr>
+                    <td colspan="5" class="text-center">Chua co ban</td>
+                </tr>
+    {{/each}}
+  </tbody>
+  
+</table>
