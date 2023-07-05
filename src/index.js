@@ -28,6 +28,12 @@ app.set(
     'view engine',
     'hbs',
 );
+
+hbs.registerHelper("sum", function(a, b)
+{
+    return parseInt(a) + parseInt(b);
+});
+
 app.set('views', path.join(__dirname, 'resources', 'views'));
 //console.log(app.get('view'));
 console.log('PATH: ', path.join(__dirname, 'resources/views'));

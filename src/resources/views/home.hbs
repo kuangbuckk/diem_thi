@@ -1,4 +1,6 @@
-<table class="table mt-4">
+<div class="mt-4">
+  <h1>Danh sách các ban thi</h1>
+  <table class="table mt-4">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -10,15 +12,19 @@
   <tbody>
     {{#each khois}}
     <tr>
-      <th scope="row">1</th>
-      <td>{{this.khoi_thi}}</td>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.khoi}}</td>
       <td>{{this.ban}}</td>
     </tr>
                 {{else}}
                 <tr>
-                    <td colspan="5" class="text-center">Chua co ban</td>
+                    <td colspan="5" class="text-center">Chưa có ban</td>
                 </tr>
     {{/each}}
   </tbody>
   
 </table>
+
+<h2><a href="./hocsinh/danhsach.hbs">Danh sách tất cả học sinh</a></h2>
+</div>
+
